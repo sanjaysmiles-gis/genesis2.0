@@ -5,6 +5,19 @@ import { faCalendar, faUsers, faLightbulb } from '@fortawesome/free-solid-svg-ic
 const Home = () => {
   return (
     <div className="container mx-auto px-4 py-16">
+      {/* College Image */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="relative w-full h-[400px] mb-16 rounded-2xl overflow-hidden"
+      >
+        <img
+          src="/images/sairam-nu-eta.jpeg"
+          alt="Sri Sairam Engineering College"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -14,8 +27,11 @@ const Home = () => {
         <h1 className="text-6xl font-bold text-white mb-6">
           <span className="text-accent">GENESIS</span> 2.0
         </h1>
-        <p className="text-xl text-blue-200 mb-8">
+        <p className="text-xl text-blue-200 mb-4">
           Empowering Engineering Excellence through Innovation and Sustainability
+        </p>
+        <p className="text-2xl text-accent font-bold mb-8">
+          August 12 - 13, 2025
         </p>
         <motion.button
           whileHover={{ scale: 1.05 }}

@@ -17,9 +17,16 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 bg-blue-900/80 backdrop-blur-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-bold text-white">
-            Genesis <span className="text-accent">2.0</span>
-          </Link>
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <img src="/images/ieee-logo.png" alt="IEEE Logo" className="h-8" />
+              <img src="/images/logo1.png" alt="Logo 1" className="h-8" />
+              <img src="/images/logo2.png" alt="Logo 2" className="h-8" />
+            </div>
+            <Link to="/" className="text-2xl font-bold text-white">
+              Genesis <span className="text-accent">2.0</span>
+            </Link>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
